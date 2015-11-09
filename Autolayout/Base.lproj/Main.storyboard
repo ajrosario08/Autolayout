@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -68,10 +69,24 @@
                                 <rect key="frame" x="20" y="104" width="171" height="30"/>
                                 <animations/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGZ-ud-fzU">
-                                <rect key="frame" x="20" y="452" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="700" image="hennessy" translatesAutoresizingMaskIntoConstraints="NO" id="QGZ-ud-fzU">
+                                <rect key="frame" x="20" y="142" width="450" height="438"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWf-XU-caU">
+                                <rect key="frame" x="478" y="330.5" width="45" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-rN-ckC">
+                                <rect key="frame" x="478" y="359.5" width="73" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -83,6 +98,7 @@
                             <constraint firstItem="Dho-6c-73A" firstAttribute="baseline" secondItem="xez-yj-F4S" secondAttribute="baseline" id="7Mz-tS-eZw"/>
                             <constraint firstItem="HES-JW-kvA" firstAttribute="leading" secondItem="Q2E-Wp-zae" secondAttribute="trailing" constant="8" symbolic="YES" id="AoQ-rl-mpY"/>
                             <constraint firstItem="Q2E-Wp-zae" firstAttribute="baseline" secondItem="HES-JW-kvA" secondAttribute="baseline" id="CCQ-PS-IJA"/>
+                            <constraint firstItem="QGZ-ud-fzU" firstAttribute="centerY" secondItem="nWf-XU-caU" secondAttribute="bottom" constant="10" id="EOM-Sv-mkc"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Dho-6c-73A" secondAttribute="leading" id="FXs-g9-cJS"/>
                             <constraint firstItem="x0v-4r-jzP" firstAttribute="top" secondItem="HES-JW-kvA" secondAttribute="bottom" constant="8" symbolic="YES" id="HK8-Le-gRw"/>
                             <constraint firstItem="X3N-0Z-tth" firstAttribute="leading" secondItem="D1j-EB-lLL" secondAttribute="trailing" constant="8" symbolic="YES" id="HaX-1g-Czu"/>
@@ -91,13 +107,17 @@
                             <constraint firstItem="xez-yj-F4S" firstAttribute="leading" secondItem="Dho-6c-73A" secondAttribute="trailing" constant="8" symbolic="YES" id="KTj-ep-3Qa"/>
                             <constraint firstItem="D1j-EB-lLL" firstAttribute="bottom" secondItem="X3N-0Z-tth" secondAttribute="bottom" id="LPc-X7-Csb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HES-JW-kvA" secondAttribute="trailing" id="P9w-an-Iqv"/>
+                            <constraint firstItem="9bc-rN-ckC" firstAttribute="top" secondItem="nWf-XU-caU" secondAttribute="bottom" constant="8" id="UCR-PK-GEs"/>
                             <constraint firstItem="R0e-kU-hGv" firstAttribute="top" secondItem="x0v-4r-jzP" secondAttribute="top" id="VZV-i6-ZZu"/>
+                            <constraint firstItem="nWf-XU-caU" firstAttribute="leading" secondItem="QGZ-ud-fzU" secondAttribute="trailing" constant="8" id="WEO-4X-h02"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R0e-kU-hGv" secondAttribute="trailing" id="Y6u-NQ-aV6"/>
                             <constraint firstItem="HES-JW-kvA" firstAttribute="top" secondItem="xez-yj-F4S" secondAttribute="bottom" constant="8" symbolic="YES" id="Y86-Ie-zli"/>
                             <constraint firstItem="x0v-4r-jzP" firstAttribute="leading" secondItem="X3N-0Z-tth" secondAttribute="trailing" constant="50" id="cmI-7i-hHy"/>
+                            <constraint firstItem="9bc-rN-ckC" firstAttribute="leading" secondItem="nWf-XU-caU" secondAttribute="leading" id="ds9-Ih-eM3"/>
                             <constraint firstItem="D1j-EB-lLL" firstAttribute="top" secondItem="X3N-0Z-tth" secondAttribute="top" id="h7S-dp-BFD"/>
                             <constraint firstItem="Q2E-Wp-zae" firstAttribute="width" secondItem="Dho-6c-73A" secondAttribute="width" id="hGM-Vp-N5j"/>
                             <constraint firstItem="x0v-4r-jzP" firstAttribute="baseline" secondItem="X3N-0Z-tth" secondAttribute="baseline" id="iIY-hE-gB8"/>
+                            <constraint firstItem="QGZ-ud-fzU" firstAttribute="top" secondItem="x0v-4r-jzP" secondAttribute="bottom" constant="8" symbolic="YES" id="jYg-O2-TF0"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Dho-6c-73A" secondAttribute="leading" id="jd3-jP-Q58"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Q2E-Wp-zae" secondAttribute="leading" id="nB6-UL-Un1"/>
                             <constraint firstItem="xez-yj-F4S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ruv-x6-jFY"/>
@@ -110,7 +130,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="companyLabel" destination="9bc-rN-ckC" id="hBz-S5-c9Q"/>
+                        <outlet property="imageView" destination="QGZ-ud-fzU" id="xKU-oJ-DNv"/>
                         <outlet property="loginField" destination="xez-yj-F4S" id="52J-yc-fmL"/>
+                        <outlet property="nameLabel" destination="nWf-XU-caU" id="qZq-cO-I6S"/>
                         <outlet property="passwordField" destination="HES-JW-kvA" id="Qx6-LB-Ofy"/>
                         <outlet property="passwordLabel" destination="Q2E-Wp-zae" id="8Yt-fs-h98"/>
                     </connections>
@@ -120,4 +143,7 @@
             <point key="canvasLocation" x="339" y="421"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hennessy" width="450" height="600"/>
+    </resources>
 </document>
