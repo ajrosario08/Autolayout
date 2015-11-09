@@ -68,6 +68,10 @@
                                 <rect key="frame" x="20" y="104" width="171" height="30"/>
                                 <animations/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGZ-ud-fzU">
+                                <rect key="frame" x="20" y="452" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -75,6 +79,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="D1j-EB-lLL" secondAttribute="leading" id="0tl-5g-FgL"/>
                             <constraint firstItem="D1j-EB-lLL" firstAttribute="width" secondItem="R0e-kU-hGv" secondAttribute="width" id="20B-o1-l41"/>
                             <constraint firstItem="R0e-kU-hGv" firstAttribute="bottom" secondItem="x0v-4r-jzP" secondAttribute="bottom" id="53X-pD-4es"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QGZ-ud-fzU" secondAttribute="bottom" constant="20" id="60z-7G-yYB"/>
                             <constraint firstItem="Dho-6c-73A" firstAttribute="baseline" secondItem="xez-yj-F4S" secondAttribute="baseline" id="7Mz-tS-eZw"/>
                             <constraint firstItem="HES-JW-kvA" firstAttribute="leading" secondItem="Q2E-Wp-zae" secondAttribute="trailing" constant="8" symbolic="YES" id="AoQ-rl-mpY"/>
                             <constraint firstItem="Q2E-Wp-zae" firstAttribute="baseline" secondItem="HES-JW-kvA" secondAttribute="baseline" id="CCQ-PS-IJA"/>
@@ -82,6 +87,7 @@
                             <constraint firstItem="x0v-4r-jzP" firstAttribute="top" secondItem="HES-JW-kvA" secondAttribute="bottom" constant="8" symbolic="YES" id="HK8-Le-gRw"/>
                             <constraint firstItem="X3N-0Z-tth" firstAttribute="leading" secondItem="D1j-EB-lLL" secondAttribute="trailing" constant="8" symbolic="YES" id="HaX-1g-Czu"/>
                             <constraint firstItem="R0e-kU-hGv" firstAttribute="leading" secondItem="x0v-4r-jzP" secondAttribute="trailing" constant="8" symbolic="YES" id="IKj-Uz-Qji"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QGZ-ud-fzU" secondAttribute="leading" id="K3H-Sc-xxw"/>
                             <constraint firstItem="xez-yj-F4S" firstAttribute="leading" secondItem="Dho-6c-73A" secondAttribute="trailing" constant="8" symbolic="YES" id="KTj-ep-3Qa"/>
                             <constraint firstItem="D1j-EB-lLL" firstAttribute="bottom" secondItem="X3N-0Z-tth" secondAttribute="bottom" id="LPc-X7-Csb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HES-JW-kvA" secondAttribute="trailing" id="P9w-an-Iqv"/>
