@@ -43,3 +43,13 @@ class ViewController: UIViewController {
     }
 }
 
+extension User {
+    var image: UIImage? {
+        if let image = UIImage(named: login) {
+            return image
+        } else {
+            return UIImage(named: "unknown")
+        }
+    }
+}
+
