@@ -48,11 +48,17 @@
                                 <rect key="frame" x="199" y="104" width="114" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Change Security"/>
+                                <connections>
+                                    <action selector="toggleSecurity" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIM-sj-Hw9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0v-4r-jzP">
                                 <rect key="frame" x="363" y="104" width="38" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="pge-HB-YzH"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0e-kU-hGv">
                                 <rect key="frame" x="409" y="104" width="171" height="30"/>
@@ -97,6 +103,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="loginField" destination="xez-yj-F4S" id="52J-yc-fmL"/>
+                        <outlet property="passwordField" destination="HES-JW-kvA" id="Qx6-LB-Ofy"/>
+                        <outlet property="passwordLabel" destination="Q2E-Wp-zae" id="8Yt-fs-h98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
