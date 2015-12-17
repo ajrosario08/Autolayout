@@ -1,6 +1,7 @@
-# Autolayout
+# Autolayout App
+This app was built by following along on the itunesU class Stanford cs193p lecture 8. This is a simple app that asks a user to login.  After the user hs login a display image is shown along with a name and company.  The autolayout app also takes adavantage of size classes.  Depending on the size class that the device supports, the layout of the UI changes accordingly.
 
-![LandScape Screenshot]https://github.com/ajrosario08/Autolayout/blob/master/landscape.png)
+![LandScape Screenshot](https://github.com/ajrosario08/Autolayout/blob/master/landscape.png)
 ![Portrait Screenshot](https://github.com/ajrosario08/Autolayout/blob/master/portrait.png)
 
 ## Topics Covered
